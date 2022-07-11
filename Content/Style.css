@@ -1,0 +1,18 @@
+﻿*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
