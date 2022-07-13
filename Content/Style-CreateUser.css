@@ -1,0 +1,41 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Teko:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --icon-background: #A4A4A4;
+    --form-background: #D8D8D8;
+    --primary-title: 'Teko', sans-serif;
+    --container-background: #eaf7fb;
+}
+
+body {
+ 
+}
+
+header.cabecalho {
+    width: 100%;
+    background-color: var(--container-background);
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #d7f1fe;
+}
+
+header.cabecalho h1{
+    margin: 0;
+    font-family: var(--primary-title);
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    vertical-align: central;
+}
+
+header.cabecalho h1:last-child{
+    color: green;
+}
