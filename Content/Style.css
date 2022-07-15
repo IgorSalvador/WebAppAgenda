@@ -164,11 +164,88 @@ div.container-box-user-page{
     height: 100vh;
 }
 
-main.container-box-user-content{
+main.container-box-user-content {
     width: 100%;
     height: 80vh;
-    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+main.container-box-user-content h1 {
+    font-family: var(--primary-title);
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    vertical-align: central;
+}
+
+form.new-user {
+    width: 70%;
+    padding: 1rem 1rem 4rem 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid RGBA(0,0,0,0.04);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+
+.new-user .info-container {
+    width: 80%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-container div{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div .rotulo{
+    width: 100%;
+}
+
+.information-input {
+    width: 90%;
+    height: 4rem;
+}
+
+.new-user .credentials-container-father {
+    width: 80%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.credentials-container div {
+    width: 90%;
+}
+
+.credentials-input {
+    width: 100%;
+    height: 4rem;
+}
+
+input.btn-success{
+    margin: auto;
+    margin-top: 2rem;
+    width: 90%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
 
 footer.container-box-user-footer {
     width: 100%;
@@ -177,7 +254,6 @@ footer.container-box-user-footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: lightcoral;
 }
 
 .container-box-user-footer p {
@@ -186,3 +262,4 @@ footer.container-box-user-footer {
     font-weight: bolder;
     text-align: center;
 }
+

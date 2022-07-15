@@ -1,4 +1,4 @@
-﻿
+﻿@model WebAppAgenda.Models.Usuario
 @{
     Layout = null;
 }
@@ -23,7 +23,40 @@
         </header>
 
         <main class="container-box-user-content">
-
+            <h1>Preencha o formulário abaixo.</h1>
+            <form action="/Usuario/CadastrarUsuario" method="post" class="new-user">
+                <div class="info-container">
+                    <div>
+                        <label for="Nome" class="rotulo">Nome: </label><br />
+                        @Html.TextBoxFor(m => m.Nome, new { @class = "information-input" })
+                    </div>
+                    <div>
+                        <label for="Sobrenome" class="rotulo">Sobrenome: </label><br />
+                        @Html.TextBoxFor(m => m.Sobrenome, new { @class = "information-input" })
+                    </div>
+                </div>
+                <div class="info-container">
+                    <div>
+                        <label for="DataNascimento" class="rotulo">Data de Nascimento: </label><br />
+                        @Html.TextBoxFor(m => m.DataNascimento, new { @type = "date", @class = "information-input" })
+                    </div>
+                    <div>
+                        <label for="CPF" class="rotulo">CPF: </label><br />
+                        @Html.TextBoxFor(m => m.CPF, new {@class = "information-input"})
+                    </div>
+                </div>
+                <div class="credentials-container-father">
+                    <div class="credentials-container">
+                        <label for="Email">E-mail: </label><br />
+                        @Html.TextBoxFor(m => m.Email, new { @type = "email", @class = "credentials-input" })
+                    </div>
+                    <div class="credentials-container">
+                        <label for="Senha">Senha</label><br />
+                        @Html.PasswordFor(m => m.Senha, new { @class = "credentials-input" })
+                    </div>
+                </div>
+                <input type="submit" name="name" value="Cadastre-se" class="btn btn-success"/>
+            </form>
         </main>
 
         <footer class="container-box-user-footer">
